@@ -63,6 +63,7 @@ img{
     background-color: transparent;
     border-color: var(--main-color);
     color: var(--main-color);
+    cursor: pointer;
 }
 
 @keyframes spin01{
@@ -111,6 +112,25 @@ img{
     transform: skewY(-3deg);
 }
 
+.form-control{
+    height: 45px;
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+    padding: 0 10px;
+    border-radius: 30px;
+    background-color: var(--dark-800);
+    border: 1px solid transparent;
+    font-size: 16px;
+    color: var(--white-900);
+    transition: all 0.5s ease;
+}
+.form-control::placeholder{
+    color: var(--white-900);
+}
+.form-control:focus{
+    border-color: var(--main-color);
+}
 /*header*/
 .justify-content-between{
     justify-content: space-between;
@@ -491,7 +511,7 @@ background-color: var(--main-color);
 
 }
 .review-item:hover img{
-    transform: translateX(30px) rotate(30deg);
+    transform: translateX(15px) rotate(15deg);
 }
 .review-item p{
     color: var(--white-900);
@@ -511,4 +531,40 @@ background-color: var(--main-color);
     display: block;
     font-size: 16px;
     color: var(--white-900);
+}
+
+/*contact section*/
+.contact-section{
+    background-color: var(--dark-800);
+}
+.contact-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-img img{
+    max-width: 420px;
+    width: 100%;
+    animation: zoomOutIn01 7s linear infinite;
+}
+.contact-img,
+.contact-form{
+    width: 50%;
+    padding: 0 15px;
+}
+.contact-form form{
+    width: 100%;
+    max-width: 480px;
+    background-color: var(--dark-700);
+    border-radius: 4px;
+    padding: 30px;
+    margin: auto;
+}
+.contact-form textarea{
+    height: 160px;
+    resize: none;
+    padding-top: 15px;
+}
+.contact-form button{
+    width: 100%;
 }
