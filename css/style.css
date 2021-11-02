@@ -65,6 +65,10 @@ img{
     color: var(--main-color);
     cursor: pointer;
 }
+p{
+    color: var(--white-900);
+    
+}
 
 @keyframes spin01{
     0%{
@@ -567,4 +571,52 @@ background-color: var(--main-color);
 }
 .contact-form button{
     width: 100%;
+}
+/**/
+.footer{
+    background-color: var(--dark-700);
+    padding: 60px 0;
+}
+.footer-item{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-item h2{
+    color: var(--white-900);
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0 0 30px;
+}
+.footer-about .social-links{
+    margin-top: 20px;
+}
+.social-links a{
+    display: inline-block;
+    border: 1px solid transparent;
+    height: 35px;
+    width: 35px;
+    color: var(--main-color);
+    line-height: 35px;
+    text-align: center;
+    font-size: 16px;
+    transition: all 0.5s ease;
+    border-radius: 50%;
+}
+.social-links a:hover{
+    border-color: var(--main-color);
+}
+.footer-quick-links ul li a{
+    display: block;
+    color: var(--white-900);
+    text-transform: capitalize;
+    padding: 5px 0;
+    font-size: 16px;
+}
+.footer-newsletter .form-control{
+    text-align: center;
+}
+.footer-newsletter button{
+    width: 100%;
+    font-family: inherit;
+    font-size: 20px;
 }
