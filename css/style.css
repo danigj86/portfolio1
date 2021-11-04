@@ -620,3 +620,80 @@ background-color: var(--main-color);
     font-family: inherit;
     font-size: 20px;
 }
+
+/*  responsive design*/
+
+@media(max-width:991px){
+
+    .header .nav-toggler{
+        display: flex;
+        margin-right: 15px;
+    }
+    .header .nav{
+        /* display: none; */
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: var(--dark-700);
+        visibility: hidden;
+        opacity: 0;
+    }
+    .header #nav-check:checked ~ .nav{
+        visibility: visible;
+        opacity: 1;
+    }
+    .header .nav ul li{
+        margin: 0;
+        display: block;
+    }
+    .home-text h1{
+        font-size: 40px;
+    }
+    .home-text h1 span::after{
+        bottom: 10px
+    }
+    .home-text h2{
+        font-size: 20px;
+    }
+    .home-text, .home-img{
+        width: 100%;
+    }
+    .home-img{
+        margin-top: 60px
+    }
+    .why-us-item, .footer-item{
+        width: calc(50% - 30px);
+    }
+    .course-item{
+        width: calc(50% - 30px);
+    }
+    .footer-item{
+        margin-bottom: 40px;
+        text-align: center;
+    }
+}
+@media(max-width:767px){
+    .fun-facts-items, .contact-form{
+        margin-top: 30px;
+    }
+   
+    .home-text, .home-img, .fun-facts-img, .fun-facts-items, .contact-img, .contact-form{
+        width: 100%;
+    }
+    .home-text h1{
+        font-size: 35px;
+    }
+    .home-text h2{
+        font-size: 18px;
+    }
+}
+@media(max-width:575px){
+    .why-us-item{
+        width: calc(100% - 30px);
+    }
+    .course-item, .fun-facts-item, .review-item, .footer-item{
+        width: calc(100% - 30px);
+    }
+    
+}
