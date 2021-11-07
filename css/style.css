@@ -621,13 +621,13 @@ background-color: var(--main-color);
     font-size: 20px;
 }
 
-/*  responsive design*/
+/*--------------------  responsive design ---------------------*/
 
 @media(max-width:991px){
 
     .header .nav-toggler{
         display: flex;
-        margin-right: 15px;
+        margin-right: 60px;
     }
     .header .nav{
         /* display: none; */
@@ -691,6 +691,13 @@ background-color: var(--main-color);
 @media(max-width:575px){
     .why-us-item{
         width: calc(100% - 30px);
+    }
+    .home-img, .home-img-inner{
+        width: 85%;
+    }
+    .home-course-item{
+        width: 30%;
+        height: 30%;
     }
     .course-item, .fun-facts-item, .review-item, .footer-item{
         width: calc(100% - 30px);
